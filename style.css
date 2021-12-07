@@ -45,11 +45,14 @@
     --yt-spec-light-blue-alpha-30: rgba(62, 166, 255, 0.3);
     --yt-spec-dark-blue-alpha-30: rgba(6, 95, 212, 0.3); */
 
-* {
+*,
+*::before,
+*::after {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;  
+  color: #0d0d0d;
 }
 html {
   background: #f1f1f1;
@@ -146,10 +149,9 @@ html {
   width: auto;
   cursor: pointer;
 }
-
 .container {
   display: flex;
-  height: 200vh;
+  min-height: 100vh;
 }
 .player-container {
   margin: 30px 20px 20px 50px;
