@@ -19,29 +19,45 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <div class="left-side">
-        <i class="material-icons">menu</i>
-        <img
-          class="youtube-icon"
-          src="./images/YouTube-Logo.wine.svg"
-          alt="YouTube Logo"
-        />
+    <div class="header">
+      <nav>
+        <div class="left-side">
+          <i class="material-icons">menu</i>
+          <img
+            class="youtube-icon"
+            src="./images/YouTube-Logo.wine.svg"
+            alt="YouTube Logo"
+          />
+        </div>
+        <div class="middle-side">
+          <input type="text" class="search-box" placeholder="Search" />
+          <button><i class="material-icons search-icon">search</i></button>
+          <i class="material-icons">mice</i>
+        </div>
+        <div class="right-side">
+          <i class="material-icons video_call">video_call</i>
+          <i class="material-icons apps">apps</i>
+          <i class="material-icons notification"
+            >notifications_none<span class="badge">3+</span></i
+          >
+          <img src="./images/avatar.png" alt="Avatar" class="avatar" />
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="player-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/0eEkWvekQiE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-      <div class="middle-side">
-        <input type="text" class="search-box" placeholder="Search" />
-        <button><i class="material-icons search-icon">search</i></button>
-        <i class="material-icons">mice</i>
-      </div>
-      <div class="right-side">
-        <i class="material-icons">video_call</i>
-        <i class="material-icons">apps</i>
-        <i class="material-icons"
-          >notifications_none<span class="badge">3</span></i
-        >
-        <img src="./images/avatar.png" alt="Avatar" class="avatar" />
-      </div>
-    </nav>
-   
+      <div class="list-container"></div>
+    </div>
   </body>
 </html>
