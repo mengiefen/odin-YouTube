@@ -83,7 +83,7 @@ html {
   margin: 0 20px;
   justify-content: flex-start;
 }
-.tab-icon{
+.tab-icon {
   margin-left: 30px;
   cursor: pointer;
 }
@@ -98,7 +98,10 @@ html {
   padding: 15px;
   width: 100%;
   border: 1px solid rgba(68, 61, 61, 0.2);
-  outline: none;  
+  outline: none;
+}
+.search-box::placeholder {
+  font-size: 16px;
 }
 .search-box:active,
 .search-box:hover {
@@ -172,24 +175,62 @@ html {
 .player-container {
   margin: 100px 20px 20px 60px;
 }
-iframe{
+iframe {
   margin-bottom: 5px;
 }
-.video-footer{
+.video-footer {
   height: 100px;
-  width: 1065px;
+  width: 760px;
   background: rgb(248, 225, 225);
 }
-.list-container{
+.list-container {
   height: 100vh;
-  background: rgb(230, 213, 213);
-  width: 600px;
+  width: 350px;
   margin-top: 100px;
+  margin-right: 30px;
 }
-.desc-box{
+.top-buttons button {
+  padding:5px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.list-item {
+  display: flex;
+}
+.list-item iframe {
+  margin: 10px;
+}
+.list-desc {
+  margin: 10px;
+  font-size: 12px;
+}
+.list-desc .list-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.list-account-name {
+  margin-top: 10px;
+  margin-bottom: 7.5px;
+}
+.account-verify {
+  width: 16px;
+  height: 16px;
+  fill: rgba(68, 61, 61, 0.2);
+}
+.views_date {
+  display: flex;
+}
+
+.views span {
+  margin: 5px;
+  font-weight: 600;
+  align-self: center;
+}
+.desc-box {
   height: 200px;
 }
-.comment-box{
+.comment-box {
   height: 200px;
   background: #000;
 }
