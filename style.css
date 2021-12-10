@@ -173,7 +173,14 @@ html {
   min-height: 100vh;
 }
 .player-container {
+  flex: 3;
   margin: 100px 20px 20px 60px;
+  width: 100%;
+  
+}
+.frame-video{
+  width: 100%;
+  height: 65vh;
 }
 iframe {
   margin-bottom: 5px;
@@ -184,9 +191,10 @@ iframe {
 }
 .list-container {
   height: 100vh;
-  width: 350px;
+  width: 300vw;
   margin-top: 100px;
   margin-right: 30px;
+
 }
 .top-buttons button {
   padding: 5px 15px;
@@ -301,7 +309,6 @@ hr {
 .video-desc p {
   padding-bottom: 20px;
 }
-
 .comment-box-heading {
   height: 100px;
   display: flex;
@@ -313,7 +320,6 @@ hr {
 }
 .comment-area {
   display: flex;
-  width: 100%;
   padding-top: 20px;
 }
 .comment-input {
@@ -347,17 +353,61 @@ hr {
   text-decoration: none;
   font-weight: 600;
 }
-.comment-box{
+.comment-box {
   display: flex;
+  margin: 15px 0 15px 0;
 }
-.comment-box-content{
+.comment-box-content {
   display: flex;
   flex-direction: column;
 }
-.comment-footer-btn{
+.comment-footer-btn {
   display: flex;
   padding: 10px 0 10px 0;
 }
-.comment-footer-btn div{
+.comment-footer-btn div {
   display: flex;
+}
+.comment-footer-btn div h4 {
+ margin-right: 15px;
+}
+.comment-para {
+  margin: 10px 0 10px 0;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 14px;
+}
+.comment-box .avatar {
+  margin-right: 15px;
+}
+.reply-btn{
+  border: none ;
+  font-weight: 600;
+}
+.top-buttons .black-btn{
+  background: #000;
+  border: none;
+  color: #fff;
+}
+
+@media only screen and (max-width: 650px) {
+  .container{
+    flex-direction: column;
+  }
+  
+  .player-container{
+    width: 100vw;
+    overflow: hidden;
+    margin: 30px 20px 20px 30px;
+  }
+  .list-container{
+    width: 100%;   
+    margin: 30px 20px 30px 20px;
+  }
+  
+  .frame-video{
+    width: 100vw;
+    height: 65vh;
+  }
+  
 }
