@@ -181,7 +181,6 @@ iframe {
 .video-footer {
   height: 100px;
   width: 760px;
-  background: rgb(248, 225, 225);
 }
 .list-container {
   height: 100vh;
@@ -190,9 +189,11 @@ iframe {
   margin-right: 30px;
 }
 .top-buttons button {
-  padding:5px 15px;
+  padding: 5px 15px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(68, 61, 61, 0.2);
 }
 
 .list-item {
@@ -227,10 +228,136 @@ iframe {
   font-weight: 600;
   align-self: center;
 }
-.desc-box {
-  height: 200px;
+
+.footer-details {
+  display: flex;
 }
-.comment-box {
-  height: 200px;
-  background: #000;
+.details {
+  display: flex;
+}
+.share-icons {
+  height: 24px;
+  width: auto;
+}
+.footer-btn-grp {
+  display: flex;
+}
+.footer-btn-grp div {
+  display: flex;
+  padding-right: 20px;
+}
+.footer-btn-grp div h4 {
+  padding-left: 10px;
+}
+.footer-title {
+  margin-bottom: 20px;
+}
+
+.desc-box {
+  height: 150px;
+}
+.details span {
+  padding: 0 10px;
+}
+.subscribe-btn {
+  padding: 10px;
+  min-width: 120px;
+  background: rgba(204, 0, 0, 0.9);
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+.show-more-btn {
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+hr {
+  height: 1px;
+  background-color: rgba(68, 61, 61, 0.2);
+  border: none;
+}
+.list-account-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 15px 0;
+}
+.list-account-name .avatar {
+  margin-right: 15px;
+}
+.list-account-name .h4 {
+  margin: 0;
+  display: block;
+}
+.account-info {
+  display: flex;
+}
+.video-desc {
+  margin-left: 50px;
+}
+.video-desc p {
+  padding-bottom: 20px;
+}
+
+.comment-box-heading {
+  height: 100px;
+  display: flex;
+  padding: 10px 0 10px 0;
+  flex-direction: column;
+}
+.comment-box-heading .avatar {
+  margin-right: 15px;
+}
+.comment-area {
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+}
+.comment-input {
+  flex-grow: 1;
+  align-self: self-start;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid rgba(68, 61, 61, 0.6);
+  outline: none;
+  height: 2.5rem;
+  font-size: 14px;
+}
+.comment-input:hover,
+.comment-input:active {
+  border-bottom: 2px solid #0d0d0d;
+}
+.sortby-btn {
+  height: 18px;
+  width: auto;
+}
+.comment-top-btn {
+  display: flex;
+}
+.comment-top-btn h4 {
+  margin: 0 15px 0 15px;
+}
+
+.comment-top-btn {
+  margin-top: 0;
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: 600;
+}
+.comment-box{
+  display: flex;
+}
+.comment-box-content{
+  display: flex;
+  flex-direction: column;
+}
+.comment-footer-btn{
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+.comment-footer-btn div{
+  display: flex;
 }
